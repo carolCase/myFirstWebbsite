@@ -1,6 +1,15 @@
 
-  body {
-    background-color:seashell;
+body, html {
+    height: 85%;
+    margin: 0;
+  }
+  
+  .bg {
+    background-image: url("https://scontent.farn1-2.fna.fbcdn.net/v/t39.30808-6/305575021_485235290277297_8046623533921723641_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=52f669&_nc_ohc=0PEJDYgiR3UAX8hF_ez&_nc_ht=scontent.farn1-2.fna&oh=00_AfDbKFbJPLbu8cNnNYb-SXckHpLw0Ts1NRFxk34T20pWKw&oe=650DF0EB");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   
@@ -48,7 +57,7 @@
             flex-direction: row;  
             flex-wrap: wrap; 
             justify-content: center;
-              
+               
         }
         .flex-container > p {
         
@@ -61,7 +70,7 @@
             .header {
                 background-color: lightseagreen;
                 color: whitesmoke;
-                padding: 16px;
+                padding: 10px;
                 font-style: italic;
                 font-size: 36px;
                 text-align: center;
@@ -82,14 +91,71 @@
               }
               .myDiv {
                 border: 2px outset mistyrose;
-                background-color:lightgray;    
+                background-color:mistyrose;    
                 font-style: italic;
                 font-size: 1rem;
-                
+              
               }
               ol.b {
                 list-style-type: square;
               }
+
+              .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+              }
+           
+              div.gallery {
+                border: 1px solid #ccc;
+              }
+              
+              div.gallery:hover {
+                border: 1px solid #777;
+              }
+              
+              div.gallery img {
+                width: 100%;
+                height: auto;
+              }
+              
+              div.desc {
+                padding: 15px;
+                text-align: center;
+              }
+              
+              * {
+                box-sizing: border-box;
+              }
+              
+              .responsive {
+                padding: 0 6px;
+                float: left;
+                width: 24.99999%;
+              }
+              
+              @media only screen and (max-width: 700px) {
+                .responsive {
+                  width: 49.99999%;
+                  margin: 6px 0;
+                }
+              }
+              
+              @media only screen and (max-width: 500px) {
+                .responsive {
+                  width: 100%;
+                }
+              }
+              
+              .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+              }
+           
+
+       
               @media (max-width: 768px) {
                 /*smartphones */
               }
